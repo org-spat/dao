@@ -1,0 +1,14 @@
+da.select().execute();
+da.select().where("").execute()
+da.select().where("").setParams(...).execute()
+da.select().where("").setParams(...).orderby("",DESC).execute()
+da.select().where("").setParams(...).orderby("",DESC).execute(0,100);
+
+da.delete().execute()
+da.delete().where("").execute()
+da.delete().where("").setParams(...).execute()
+
+da.insert(T obj).execute()
+
+da.update(T obj).execute()
+da.update(T obj).where("").execute()
