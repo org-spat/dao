@@ -51,7 +51,7 @@ public class Mapping<T> {
 					cInf.converter = Converter.getConverter(cInf.column.converter());
 				}
 				
-				orMap.put(f.getName(), cInf);
+				orMap.put(f.getName().toLowerCase(), cInf);
 				roMap.put(cInf.column.name().toLowerCase(), cInf);
 			}
 		}
