@@ -31,7 +31,7 @@ public class DeleteExecutor<T> extends Executor<T> {
 	
 	private void genSQL() {
 		StringBuilder sbsql = new StringBuilder();
-		sbsql.append("delete from");
+		sbsql.append("delete from ");
 		sbsql.append(getMapping().getTableName());
 		if (where.length() > 0) {
 			sbsql.append(" where ");
